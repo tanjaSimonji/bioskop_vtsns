@@ -3,66 +3,76 @@
 
 <head>
     <title> Bioskop </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Bioskop </h1>
-    <div>
-        <img src="./images/logo.png" width="150" height="110" alt="logo">
+    <img id="bioskop" src="./images/Screenshot2.png" width=" 250" height="50" alt="image">
+
+    <div class="datum_grad">
+
+        <label id="datum" for="Datum"></label>
+        <input type="date" id="datum" name="Izaberi datum:">
+
+        <select id="Izaberi_grad">
+            <option selected> Izaberi grad </option>
+            <option> Novi Sad </option>
+            <option> Beograd </option>
+            <option> Subotica </option>
+        </select>
+
     </div>
 
-    <nav>
-        <a href="index.html"> NASLOVNA</a> |
-        <a href="./pages_html/repertoar.html">REPERTOAR</a> |
-        <a href="./pages_html/uskoro.html">USKORO</a> |
-        <a href="./pages_html/ocene_filmova.html">OCENE FILMOVA</a> |
-        <a href="./pages_html/akcije.html">AKCIJE</a> |
-        <a href="./pages_html/galerija.html">GALERIJA</a> |
-        <a href="./pages_html/kontakt.html">KONTAKT</a> |
-        <a href="./pages_html/registracija.html">REGISTRACIJA</a>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"> NASLOVNA</a></li>
+            <li><a href="./pages_html/repertoar.html">REPERTOAR</a></li>
+            <li><a href="./pages_html/ocene_filmova.html">OCENE FILMOVA</a></li>
+            <li><a href="./pages_html/galerija.html">GALERIJA</a></li>
+            <li><a href="./pages_html/registracija.html">REGISTRACIJA</a></li>
+        </ul>
     </nav>
 
     <br>
 
-    <div>
-        <img src="./images/happyvector0711804000425.jpg" width="270" height="200" alt="image">
-        <img src="./images/4.jpg" width="270" height="200" alt="image">
-        <img src="./images/happyvector0711804000423.jpg" width="270" height="200" alt="image">
-        <img src="./images/happyvector0711804000422.jpg" width="270" height="200" alt="image">
-        <img src="./images/happyvector0711804000421.jpg" width="270" height="200" alt="image">
-
+    <div class="img_index">
+        <img src="./images/Ekskurzija1.png" width=" 250" height="300" alt="image">
+        <img src="./images/Gladiator4.png" width="250" height="300" alt="image">
+        <img src="./images/Here2.png" width="250" height="300" alt="image">
+        <img src="./images/Conclave1.png" width="250" height="300" alt="image">
+        <img src="./images/Wicked2.png" width="250" height="300" alt="image">
     </div>
 
-    <h2><b>Dobrodošli na stranicu bioskop &#127909;</b></h2>
+    <div class="uvod">
+        <h2><b>Dobrodošli na stranicu bioskop &#127909;</b></h2>
 
-    <ul>
-        <li>Najnoviji filmovi samo kod nas</li>
-        <li>Akcije za decu i porodice</li>
-        <li>Rezervacija karti online</li>
-        <li>Ocene najboljih filmova ikada</li>
-
-    </ul>
-
+        <ul>
+            <li>Najnoviji filmovi samo kod nas</li>
+            <li>Akcije za decu i porodice</li>
+            <li>Rezervacija karti online</li>
+            <li>Ocene najboljih filmova ikada</li>
+        </ul>
+    </div>
     <br>
 
-    <hr>
+    <footer>
+        <br>
+        <div id="kontakt">
+            &#128205; <b>&nbsp;Adresa:</b> Adresa 1, Novi Sad<br>
+            &#128222; <b>Telefon:</b> 070 000 000<br>
+            &#128231; <b>Email:</b> email@email.com<br> <br>
+        </div>
+        <fieldset>
+            <legend>Prijavi se na naš Newsletter za najnovije vesti i specijalne ponude:</legend>
+            <b>Vaša email adresa: </b> <input id="email" type="email" placeholder="email@email.com">
+            <input id="dugme" type="submit" value="Pošalji">
+        </fieldset>
 
-    <br>
-
-    <pre>  &#128205;      <b>Adresa:</b> Adresa 1, Novi Sad </pre>
-    <pre>  &#128222;     <b>Telefon:</b> 070 000 000 </pre>
-    <pre>  &#128231;     <b>Email:</b> email@email.com </pre> <br>
-
-    <fieldset>
-        <legend>Prijavi se na naš Newsletter za najnovije vesti i specijalne ponude:</legend>
-        <b>Vaša email adresa: </b> <input type="email" placeholder="email@email.com">
-        <input type="submit" value="Pošalji">
-    </fieldset>
-
-    <hr>
-
+        <hr>
+    </footer>
 </body>
 
 </html>

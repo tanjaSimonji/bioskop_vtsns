@@ -4,156 +4,154 @@
 <head>
     <title> Bioskop </title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <h1>Bioskop </h1>
+    <img id="bioskop1" src="../images/Screenshot2.png" width=" 250" height="50" alt="image">
 
-    <nav>
-        <a href="../index.html"> NASLOVNA</a> |
-        <a href="repertoar.html">REPERTOAR</a> |
-        <a href="uskoro.html">USKORO</a> |
-        <a href="ocene_filmova.html">OCENE FILMOVA</a> |
-        <a href="akcije.html">AKCIJE</a> |
-        <a href="galerija.html">GALERIJA</a> |
-        <a href="kontakt.html">KONTAKT</a> |
-        <a href="registracija.html">REGISTRACIJA</a>
+    <div class="datum_grad">
 
+        <label id="datum" for="Datum"></label>
+        <input type="date" id="datum" name="Izaberi datum:">
+
+        <select id="Izaberi_grad">
+            <option selected> Izaberi grad </option>
+            <option> Novi Sad </option>
+            <option> Beograd </option>
+            <option> Subotica </option>
+        </select>
+
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html"> NASLOVNA</a></li>
+            <li><a href="repertoar.html">REPERTOAR</a></li>
+            <li><a href="ocene_filmova.html">OCENE FILMOVA</a></li>
+            <li><a href="galerija.html">GALERIJA</a></li>
+            <li><a href="registracija.html">REGISTRACIJA</a></li>
+        </ul>
     </nav>
 
     <hr>
 
-    <h2> Na repertoaru </h2>
-
-    <label for="Datum">Izaberi datum:</label>
-    <input type="date" id="Datum" name="Izaberi datum:">
-
-    <select>
-        <option selected> Izaberi grad </option>
-        <option> Novi Sad </option>
-        <option> Beograd </option>
-        <option> Subotica </option>
-    </select>
+    <h1> Na repertoaru: </h1>
 
     <hr>
 
-    <h3>Kung Fu Panda 4</h3>
 
-    <p><b> Izaberi vreme projekcije : </b></p>
-    <input type="radio" name="vreme"> 18:30
-    <input type="radio" name="vreme"> 20:00
+    <div class="zlica">
+        <img src="../images/Wicked2.png" width="220" height="270" alt="logo">
+        <div class="opis">
+            <h2>Zlica</h2>
 
-    <p>
-        Režiser: Mike Mitchell, Stephanie Stine<br>
-        Žanr: Avantura, Animirani<br>
-        Trajanje: 95 min<br>
-        Distributer: Taramount<br>
-        Zemlja porekla: US<br>
-        Godina proizvodnje: 2024
-    </p>
+            <p><b>Izaberi vreme projekcije :</b></p>
+            <input type="radio" name="vreme"> 17:30
+            <input type="radio" name="vreme"> 21:00
 
-    <div>
-        <img src="../images/kung-fu-panda.webp" width="300" height="400" alt="logo">
+            <p>
+                Režiser: Jon M. Chu<br>
+                Glumci: Ariana Grande, Bronwyn James, Cynthia Erivo<br>
+                Žanr: Avantura, Fantazija, Animirani<br>
+                Trajanje: 160 min<br>
+                Distributer: Taramount<br>
+                Zemlja porekla: US<br>
+                Godina proizvodnje: 2024<br>
+                Cena karte: 400 din <input id="dugme" type="submit" value="Kupi kartu"></button>
+            </p>
+        </div>
     </div>
-
-    <pre>Cena karte: 500 din  <input type="submit" value="Kupi kartu"></button></pre>
-
     <hr>
 
-    <h3>Za danas toliko</h3>
+    <div class="konklava">
+        <img src="../images/Conclave1.png" width="220" height="270" alt="logo">
+        <div class="opis">
+            <h2>Konklava</h2>
 
-    <p><b>Izaberi vreme projekcije :</b></p>
-    <input type="radio" name="vreme"> 17:30
-    <input type="radio" name="vreme"> 21:00
+            <p><b> Izaberi vreme projekcije : </b></p>
+            <input type="radio" name="vreme"> 18:30
+            <input type="radio" name="vreme"> 20:00
 
-    <p>
-        Režiser: Marko Đorđević<br>
-        Glumci: Filip Đurić, Ivana Vuković, Nikola Rakočević, Goran Bogdan<br>
-        Žanr: Drama<br>
-        Trajanje: 105 min<br>
-        Distributer: MegaCom Film<br>
-        Zemlja porekla: RS<br>
-        Godina proizvodnje: 2024<br>
-    </p>
-
-    <div>
-        <img src="../images/ZA_DANAS_TOLIKO.jpg" width="300" height="400" alt="logo">
+            <p>
+                Režiser: Edward Berger<br>
+                Žanr: triler<br>
+                Trajanje: 120 min <br>
+                Distributer: Blitz Film Video doo<br>
+                Zemlja porekla: US<br>
+                Godina proizvodnje: 2024<br>
+                Cena karte: 500 din <input id="dugme" type="submit" value="Kupi kartu"></button>
+            </p>
+        </div>
     </div>
-
-    <pre>Cena karte: 400 din  <input type="submit" value="Kupi kartu"></button></pre>
-
     <hr>
 
-    <h3>Artur kralj</h3>
+    <div class="here">
+        <img src="../images/Here2.png" width="220" height="270" alt="logo">
+        <div class="opis">
+            <h2>Ovde</h2>
 
-    <p><b>Izaberi vreme projekcije :</b></p>
-    <input type="radio" name="vreme"> 14:30
-    <input type="radio" name="vreme"> 17:00
+            <p><b>Izaberi vreme projekcije :</b></p>
+            <input type="radio" name="vreme"> 14:30
+            <input type="radio" name="vreme"> 17:00
 
-    <p>
-        Režiser: Simon Cellan Jones<br>
-        Glumci: Mark Wahlberg, Simu Liu, Juliet Rylance<br>
-        Žanr: Avantura<br>
-        Trajanje: 107 min<br>
-        Distributer: Taramount<br>
-        Zemlja porekla: US<br>
-        Godina proizvodnje: 2024<br>
-    </p>
-
-    <div>
-        <img src="../images/ARTHUR_THE_KING.jpg" width="300" height="400" alt="logo">
+            <p>
+                Režiser: Robert Zemeckis<br>
+                Glumci: Tom Hanks, Robin Wright<br>
+                Žanr: Drama<br>
+                Trajanje: 104 min<br>
+                Distributer: Blitz Film Video doo<br>
+                Zemlja porekla: US<br>
+                Godina proizvodnje: 2024<br>
+                Cena karte: 500 din <input id="dugme" type="submit" value="Kupi kartu"></button>
+            </p>
+        </div>
     </div>
-
-    <pre>Cena karte: 500 din  <input type="submit" value="Kupi kartu"></button></pre>
-
     <hr>
 
-    <h3>Dina 2</h3>
+    <div class="gladiator">
+        <img src="../images/Gladiator4.png" width="220" height="270" alt="logo">
+        <div class="opis">
+            <h2>Gladiator 2</h2>
 
-    <p><b>Izaberi vreme projekcije :</b></p>
-    <input type="radio" name="vreme"> 19:30
-    <input type="radio" name="vreme"> 21:00
+            <p><b>Izaberi vreme projekcije :</b></p>
+            <input type="radio" name="vreme"> 19:30
+            <input type="radio" name="vreme"> 21:00
 
-    <p>
-        Režiser: Denis Vilnev<br>
-        Glumci: Rebecca Ferguson, Florence Pugh, Timothée Chalamet<br>
-        Žanr: SF<br>
-        Trajanje: 166 min<br>
-        Distributer: Blitz Film Video doo<br>
-        Zemlja porekla: US<br>
-        Godina proizvodnje: 2024<br>
-    </p>
-
-    <div>
-        <img src="../images/dune.jpg" width="300" height="400" alt="logo">
+            <p>
+                Režiser: Ridley Scott<br>
+                Glumci: Pedro Pascal, Denzel Washington, Connie Nielsen, Derek Jacobi, Paul Mescal <br>
+                Žanr: Akcioni, Avantura<br>
+                Trajanje: 150 min<br>
+                Distributer: Taramount<br>
+                Zemlja porekla: US<br>
+                Godina proizvodnje: 2024<br>
+                Cena karte: 700 din <input id="dugme" type="submit" value="Kupi kartu">
+            </p>
+        </div>
     </div>
-
-    <pre>Cena karte: 700 din  <input type="submit" value="Kupi kartu"></pre>
-
     <hr>
 
-    <h3>Lesi: Nova avantura</h3>
+    <div class="ekskurzija">
+        <img src="../images/Ekskurzija1.png" width="220" height="270" alt="logo">
+        <div class="opis">
+            <h2>Exkurzija</h2>
 
-    <p><b>Izaberi vreme projekcije :</b></p>
-    <input type="radio" name="vreme"> 14:30
-    <input type="radio" name="vreme"> 18:00
+            <p><b>Izaberi vreme projekcije :</b></p>
+            <input type="radio" name="vreme"> 14:30
+            <input type="radio" name="vreme"> 18:00
 
-    <p>
-        Režiser: Hanno Olderdissen<br>
-        Žanr: Avantura<br>
-        Trajanje: 91 min<br>
-        Distributer: Taramount<br>
-        Zemlja porekla: DE<Br>
-        Godina proizvodnje: 2024<Br>
-    </p>
-
-    <div>
-        <img src="../images//lesi.jpg" width="300" height="400" alt="logo">
+            <p>
+                Režiser: Una Gunjak<br>
+                Glumci: Asja Zara Lagumdžija, Nađa Spaho, Maja Izetbegović, Mediha Musliović, Izudin Bajrović<br>
+                Žanr: Drama<br>
+                Trajanje: 93 min<br>
+                Godina proizvodnje: 2024<Br>
+                Cena karte: 500 din <input id="dugme" type="submit" value="Kupi kartu">
+            </p>
+        </div>
     </div>
-
-    <pre>Cena karte: 500 din  <input type="submit" value="Kupi kartu"></pre>
-
     <hr>
 
 </body>

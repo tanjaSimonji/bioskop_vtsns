@@ -1,0 +1,245 @@
+#bioskop {
+    animation-duration: 3s;
+    animation-name: slide-in;
+    border-radius: 5px;
+}
+
+#bioskop1 {
+    border-radius: 5px;
+}
+
+@keyframes slide-in {
+    from {
+        scale: 10% 0;
+    }
+
+    to {
+        scale: 100% 1;
+    }
+}
+
+#checkbtn {
+    color: aliceblue
+}
+
+body {
+    background-color: rgb(44, 52, 52);
+    margin-left: 7%;
+    margin-right: 7%;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(160, 163, 162);
+    cursor: context-menu;
+}
+
+h1 {
+    animation-duration: 1s;
+    animation-name: h1;
+}
+
+@keyframes h1 {
+    from {
+        scale: -90% 0;
+    }
+
+    to {
+        scale: 100% 1;
+    }
+}
+
+.datum_grad {
+    float: right;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 5px;
+
+}
+
+select,
+input#datum {
+    background-color: rgb(160, 163, 162);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border-color: aqua;
+    border-width: 2px;
+    padding: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+
+.navbar a {
+    padding: 20px 28px 20px 28px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar ul {
+    padding-left: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #000;
+    margin: 0;
+    border-radius: 5px;
+
+}
+
+.navbar a:hover {
+    color: aqua;
+    border-bottom: 1px solid aqua;
+}
+
+@media (max-width:659px) {
+    .datum_grad {
+        float: left;
+    }
+}
+
+@media (max-width: 1020px) {
+
+    .navbar ul li {
+        display: flex;
+        width: 100%;
+    }
+
+    .navbar a {
+        width: 100%;
+    }
+
+    .navbar ul {
+        margin-top: 55px;
+        padding: 0px;
+    }
+
+    .img_index {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.img_index {
+    display: flex;
+}
+
+.img_index img {
+    margin: 5px;
+    border-radius: 5px
+}
+
+.img_index img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 0.2rem aqua);
+}
+
+.konklava img,
+.ekskurzija img {
+    padding-top: 20px;
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: small;
+}
+
+.konklava:hover,
+.zlica:hover,
+.here:hover,
+.gladiator:hover,
+.ekskurzija:hover {
+    background-color: rgb(63, 72, 69);
+    transform: scale(1.03);
+    border-radius: 5px;
+}
+
+.opis {
+    display: inline-block;
+    color: rgb(160, 163, 162);
+}
+
+#dugme {
+    background-color: black;
+    color: aliceblue;
+    border-radius: 5px;
+    border-color: aqua;
+    border-width: 2px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+#dugme:hover {
+    color: black;
+    background-color: rgb(160, 163, 162);
+}
+
+table {
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: black;
+    height: 50px;
+    border: 1px solid aqua;
+}
+
+
+td {
+    text-align: center;
+    border: 1px solid aqua;
+    height: 35px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(160, 163, 162);
+    color: #000;
+}
+
+#kontakt {
+    margin-left: 20px;
+}
+
+input#email {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+    border-color: aqua;
+    border-width: 2px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: auto;
+}
+
+fieldset {
+    border-radius: 5px;
+}
+
+#ime,
+#prezime,
+#email_fieldset,
+#korisnicko_ime,
+#lozinka {
+    background-color: aliceblue;
+    border-radius: 5px;
+    border-color: aqua;
+    border-width: 2px;
+    padding: 10px;
+}
+
+textarea {
+    background-color: aliceblue;
+    border-radius: 5px;
+    border-color: aqua;
+}

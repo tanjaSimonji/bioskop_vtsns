@@ -4,58 +4,72 @@
 <head>
     <title> Bioskop </title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <h1>Bioskop</h1>
+    <img id="bioskop1" src="../images/Screenshot2.png" width=" 250" height="50" alt="image">
 
-    <nav>
-        <a href="../index.html"> NASLOVNA</a> |
-        <a href="repertoar.html">REPERTOAR</a> |
-        <a href="uskoro.html">USKORO</a> |
-        <a href="ocene_filmova.html">OCENE FILMOVA</a> |
-        <a href="akcije.html">AKCIJE</a> |
-        <a href="galerija.html">GALERIJA</a> |
-        <a href="kontakt.html">KONTAKT</a> |
-        <a href="registracija.html">REGISTRACIJA</a>
+    <div class="datum_grad">
 
+        <label id="datum" for="Datum"></label>
+        <input type="date" id="datum" name="Izaberi datum:">
+
+        <select id="Izaberi_grad">
+            <option selected> Izaberi grad </option>
+            <option> Novi Sad </option>
+            <option> Beograd </option>
+            <option> Subotica </option>
+        </select>
+
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html"> NASLOVNA</a></li>
+            <li><a href="repertoar.html">REPERTOAR</a></li>
+            <li><a href="ocene_filmova.html">OCENE FILMOVA</a></li>
+            <li><a href="galerija.html">GALERIJA</a></li>
+            <li><a href="registracija.html">REGISTRACIJA</a></li>
+        </ul>
     </nav>
 
     <hr>
-    <h2> Registracija </h2>
+    <h1> Registracija: </h1>
     <hr>
 
-    <fieldset>
+    <form id="registracija">
+        <fieldset>
 
-        <p> Ime: </p>
-        <input type="ime">
+            <p> Ime: </p>
+            <input id="ime" type="ime">
 
-        <p> Prezime: </p>
-        <input type="prezime">
+            <p> Prezime: </p>
+            <input id="prezime" type="prezime">
 
-        <p> Email: </p>
-        <input type="email" placeholder="email@email.com" required>
+            <p> Email: </p>
+            <input id="email_fieldset" type="email" placeholder="email@email.com" required>
 
-        <p> Korisnicko ime: </p>
-        <input type="korisnicko ime">
+            <p> Korisnicko ime: </p>
+            <input id="korisnicko_ime" type="korisnicko ime">
 
-        <p> Lozinka: </p>
-        <input type="lozinka">
+            <p> Lozinka: </p>
+            <input id="lozinka" type="lozinka">
 
-        <p> Student:</p>
-        <input type="radio" name="student"> Da
-        <input type="radio" name="student"> Ne
+            <p> Student:</p>
+            <input id="radio" type="radio" name="student"> Da
+            <input id="radio" type="radio" name="student"> Ne
 
-        <p> Poruka: </p>
-        <textarea name="message" rows="7" cols="50" placeholder="moja poruka ... &#128522;" required></textarea>
+            <p> Poruka: </p>
+            <textarea name="message" rows="7" cols="50" placeholder="moja poruka ... &#128522;" required></textarea>
 
-        <br>
-        <br>
+            <br>
+            <br>
 
-        <input type="submit" value="Pošalji">
-    </fieldset>
-
+            <input id="dugme" type="submit" value="Pošalji">
+        </fieldset>
+    </form>
     <hr>
 
 </body>
