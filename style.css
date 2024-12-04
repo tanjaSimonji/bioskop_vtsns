@@ -4,10 +4,6 @@
     border-radius: 5px;
 }
 
-#bioskop1 {
-    border-radius: 5px;
-}
-
 @keyframes slide-in {
     from {
         scale: 10% 0;
@@ -51,7 +47,6 @@ h1 {
     font-weight: bold;
     font-size: 25px;
     margin-top: 5px;
-
 }
 
 select,
@@ -75,7 +70,6 @@ input#datum {
     cursor: pointer;
     font-size: 18px;
     text-align: center;
-
 }
 
 .navbar ul li {
@@ -90,7 +84,6 @@ input#datum {
     background-color: #000;
     margin: 0;
     border-radius: 5px;
-
 }
 
 .navbar a:hover {
